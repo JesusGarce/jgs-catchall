@@ -4,22 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JesusGarce Catchall</title>
+  <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'JesusGarce Catchall',
-      repo: 'https://github.com/JesusGarce/jgs-catchall',
-      loadSidebar: true,
-      search: 'auto',
-      alias: {
-        '/tweets/': '/tweets/javascript.md',
-        '/recursos/': '/recursos/paginas-web.md'
-      }
-    };
+    <div id="filter-container">
+        <input type="text" id="searchInput" placeholder="🔍 Buscar recursos..." oninput="filterContent()">
+        <select id="categoryFilter" onchange="filterContent()">
+          <option value="">Todas las categorías</option>
+          <option value="tweets">Tweets</option>
+          <option value="recursos">Recursos</option>
+          <option value="proyectos">Proyectos Open Source</option>
+        </select>
+      </div>
+      
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+        name: 'JesusGarce Catchall',
+        repo: 'https://github.com/JesusGarce/jgs-catchall',
+        loadSidebar: true,
+        search: 'auto',
+        alias: {
+            '/tweets/': '/tweets/javascript.md',
+            '/recursos/': '/recursos/paginas-web.md'
+        }
+        };
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+  #filter-container {
+    padding: 10px;
+    text-align: center;
+  }
+  #searchInput, #categoryFilter {
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+  }
