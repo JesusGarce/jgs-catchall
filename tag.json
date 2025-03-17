@@ -1,7 +1,6 @@
 {
-  "javascript": ["tweets/javascript.md", "recursos/paginas-web.md"],
-  "angular": ["tweets/angular.md"],
-  "backend": ["recursos/discord-telegram.md"],
-  "frontend": ["recursos/blogs.md", "tweets/javascript.md"],
+  "javascript": ["components/angular.md", "resources/websites.md"],
+  "angular": ["components/angular.md"],
+  "frontend": ["resources/tweets.css"],
   "herramientas": ["proyectos/herramientas-utiles.md"]
 }
