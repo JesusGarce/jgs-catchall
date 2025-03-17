@@ -6,15 +6,17 @@
   <title>JesusGarce Catchall</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <script src="./script.js"></script>
 </head>
 <body>
     <div id="filter-container">
-        <input type="text" id="searchInput" placeholder="🔍 Buscar recursos..." oninput="filterContent()">
+        <input type="text" id="searchInput" placeholder="🔍 Search resources..." oninput="filterContent()">
         <select id="categoryFilter" onchange="filterContent()">
-          <option value="">Todas las categorías</option>
-          <option value="tweets">Tweets</option>
-          <option value="recursos">Recursos</option>
-          <option value="proyectos">Proyectos Open Source</option>
+          <option value="">All categories</option>
+          <option value="components">Components</option>
+          <option value="resources">Resources</option>
+          <option value="channels">Channels</option>
+          <option value="projects">Projects</option>
         </select>
       </div>
       
@@ -26,12 +28,11 @@
         loadSidebar: true,
         search: 'auto',
         alias: {
-            '/tweets/': '/tweets/javascript.md',
-            '/recursos/': '/recursos/paginas-web.md'
+            '/components/': '/components/javascript.md',
+            '/resources/': '/resources/websites.md'
         }
         };
   </script>
-    <script src="./script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
